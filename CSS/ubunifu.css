@@ -43,6 +43,31 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+.dd1 {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .ddi {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.788);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color: white;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #6f6f6f;
+  }
+  
+  .dd1:hover .ddi {
+    display: block;
+  }
 .list button{
     height: 30px;
     width: 80px;
