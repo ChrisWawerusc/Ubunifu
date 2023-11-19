@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubunifu</title>
     <link rel="stylesheet" href="/CSS/ubunifu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <div class="main">
         <div class="opc">
-            <div class="navbar">
+            <div class="navbar transparent" id="navbar">
                 <ul class="list">
-                    <div class="dd1">
+                    <div class="dropdown">
                         <li title="About"><span>ABOUT</span></li>
-                        <div class="ddi">
+                        <div class="dropdowncontent">
                             <p>Our story & How we work</p>
                             <p>Methodology & Success</p>
                             <p>Ubunifu Kids</p>
@@ -21,9 +23,9 @@
                             <p>Career</p>
                         </div>
                     </div>
-                    <div class="dd1">
+                    <div class="dropdown">
                         <li title="Programs"><span>PATHWAYS</span></li>
-                        <div class="ddi">
+                        <div class="dropdowncontent">
                             <p>Software Development</p>
                             <p>Machine Learning & AI</p>
                             <p>Data Science</p>
@@ -42,7 +44,8 @@
             <h2>School of software Engineering & Artificial Intelligence</h2>
             <br>
             <br>
-            <button class="b">BUILD YOUR STARTUP</button>
+            <button id="startup" class="b">BUILD YOUR STARTUP</button>
+            <button class="push" onclick="scrollToSection('pg4')"><i class="fa-solid fa-arrow-down fa-xl" style="color: #fafafa;"></i></button>
         </div>
     </div>
     <div class="main2">
@@ -58,31 +61,31 @@
         </div>
         <div class="icons">
             <div class="p1">
-                <div class="grad">
+                <div class="grad" data-aos="zoom-in">
                     <h1>Graduate with your startup</h1>
                     <br>
                     <p>At Ubunifu, students learn <br>with the focus of building <br> and launching to market <br> their startups at the end of <br>their program. We dont offer <br>job placements.</p>
                 </div>
-                <div class="learn">
+                <div class="learn" data-aos="zoom-in">
                     <h1>Learn from the top minds</h1>
                     <br>
                     <p>Our curriculum is delivered <br> by active industry thought <br>leaders such as Reinhard & <br>etc. The opportunity to be <br> coached by accomplished <br> engineers is rare.</p>
                 </div>
             </div>
             <div class="p2">
-                <div class="project">
+                <div class="project" data-aos="zoom-in">
                     <h1>Project based learning</h1>
                     <br>
                     <p>Ubunifu's unique curriculum <br> is based on the Project <br> based Learning <br>methodology. Students <br> identify what they need to <br> build/work on and we <br> deliver through supported <br>work.</p>
                 </div>
-                <div class="peer">
+                <div class="peer" data-aos="zoom-in">
                     <h1>Peer learning</h1>
                     <p>Learn by doing. Learn from <br> each other. Always asking <br> “why,” we constantly <br> question the status quo. By <br>challenging ourselves and <br> one another, we're building a <br> new kind of community.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="main3">
+    <div class="main3" data-aos="fade-left">
         <div class="img">
            <a href="https://www.youtube.com/watch?v=lLDiHIGTutA">
                 <img src="/images/icon-play.png" alt="">
@@ -98,41 +101,41 @@
             <button> <a href="https://ubunifucollege.com/apply">ENROL TODAY</a></button>
         </div>
     </div>
-    <div class="page4">
+    <div class="page4" id="pg4">
         <div class="words">
             <h1>OUR PROGRAMS</h1>
             <br>
             <h2>Pathways</h2>
         </div>
         <div class="cont1">
-            <div class="image1">
+            <div class="image1" data-aos="zoom-in">
                 <img src="/images/sd.jpg" alt="">
                 <h1>SOFTWARE DEVELOPMENT</h1>
                 <p>Web Dev, Mobile App Dev, Full Stack Dev etc</p>
             </div>
-            <div class="image2">
+            <div class="image2" data-aos="zoom-in">
                 <img src="/images/ml.jpg" alt="">
                 <h1>MACHINE LEARNING(AI)</h1>
                 <p>Machine Learning & Deep Learning</p>
             </div>
-            <div class="image3">
+            <div class="image3" data-aos="zoom-in">
                 <img src="/images/ds.jpg" alt="">
                 <h1>DATA SCIENCE</h1>
                 <p>Data Science</p>
             </div>
         </div>
         <div class="cont2">
-            <div class="image4">
+            <div class="image4" data-aos="zoom-in">
                 <img src="/images/bc.jpg" alt="">
                 <h1>BLOCKCHAIN</h1>
                 <p>Blockchain</p>
             </div>
-            <div class="image5">
+            <div class="image5" data-aos="zoom-in">
                 <img src="/images/robotics.jpg" alt="">
                 <h1>ROBOTICS</h1>
                 <p>Robotics</p>
             </div>
-            <div class="image6">
+            <div class="image6" data-aos="zoom-in">
                 <img src="/images/startup.jpg" alt="">
                 <h1>STARTUP SCHOOL</h1>
                 <p>Learn how to start & run a company</p>
@@ -195,7 +198,7 @@
             </div>
         </div>
     </div>
-    <div class="page7">
+    <div class="page7" data-aos="zoom-in">
             <div class="img2">
                <div class="opc2">
                 <a class="link" href="https://www.youtube.com/watch?v=lLDiHIGTutA">
@@ -234,7 +237,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner">
+        <div class="banner" data-aos="fade-up">
             <h1>Let's build something great together</h1>
             <button class="button"><a href="https://ubunifucollege.com/apply">GET STARTED TODAY</a></button>
         </div>
@@ -264,6 +267,30 @@
                     <img src="/images/ub logo" alt="">
                     <br>
                     <p>We are a Premium school of Software <br> Engineering, Artificial Intelligence, Data <br> Science, Robotics & Blockchain.</p>
+                    
+                        <ul class="iconsss">
+                            <li><a href="https://instagram.com/ubunifucollege" target="_blank">
+                                <i class="fa-brands fa-instagram fa-lg " style="color: #fafafa;"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://facebook.com/ubunifucollege" target="_blank">
+                                <i class="fa-brands fa-facebook fa-lg" style="color: #fafafa;"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://linkedin.com/company/ubunifucollege" target="_blank">
+                                <i class="fa-brands fa-linkedin fa-lg" style="color: #fafafa;"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://snapchat.com/add/ubunifucollege" target="_blank">
+                                <i class="fa-brands fa-snapchat fa-lg" style="color: #fafafa;"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://x.com/ubunifucollege" target="_blank">
+                                <i class="fa-brands fa-twitter fa-lg" style="color: #fafafa;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    
                 </div>
                 <div class="c2">
                     <h1>INFORMATION</h1>
@@ -285,7 +312,7 @@
                     <br>
                     <p>Ubunifu college <br>Nairobi,Kenya</p>
                     <br>
-                    <h2>Email: <a href="admissions@ubunifucollege.com">admissions@ubunifucollege.com</a></h2>
+                    <h2>Email: <a class="mail" href="mailto:(admissions@ubunifucollege.com)">admissions@ubunifucollege.com</a></h2>
                     <h3>Phone: (+254)727 634 101</h3>
                     <h4><a class="maps" href="https://ubunifucollege.com/contact">VIEW DIRECTION</a></h4>
                 </div>
@@ -297,6 +324,11 @@
                 <p>© 2022 Ubunifu College. All rights reserved.</p>
             </div>
         </div>
-   
+        <script src="https://kit.fontawesome.com/e031dfdb29.js" crossorigin="anonymous"></script>
+        <script src="/javascript/ubunifu.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script> 
 </body>
 </html>
